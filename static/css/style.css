@@ -216,8 +216,9 @@ body {
 }
 
 #slide-1 {
-	background-image: url('../images/crowd.jpg');
+	background-image: url('../images/stage.jpg');
 	color: #ffffff;
+	opacity:0.6
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
