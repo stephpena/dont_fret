@@ -15,7 +15,7 @@ def pedal():
 def brand_list():
     brands = ["Boss","Korg","Electro-Harmonix","Budda","Blackstar","Bogner","Digitech","Fulltone","Dunlop"]
     return brands
-
+brands = brand_list()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', threaded=True)
