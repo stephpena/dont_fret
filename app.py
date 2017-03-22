@@ -1,5 +1,3 @@
-from __future__ import division
-from math import sqrt
 from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
@@ -12,10 +10,16 @@ def index():
 def pedal():
     return render_template('pedal.html')
 
+@app.route('/')
 def brand_list():
     brands = ["Boss","Korg","Electro-Harmonix","Budda","Blackstar","Bogner","Digitech","Fulltone","Dunlop"]
     return brands
 brands = brand_list()
+
+def genre_list():
+    genres = []
+    return genres
+genres = genre_list()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', threaded=True)
