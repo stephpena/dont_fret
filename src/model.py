@@ -4,7 +4,7 @@ from scipy import sparse
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-class ItemItemRecommender(object):
+class UserRecommendations(object):
     with open("data/model.pkl") as f_un:
         model = pickle.load(f_un)
 
@@ -15,10 +15,6 @@ class ItemItemRecommender(object):
         user_matrix_sparse = sparse.csr_matrix(user_matrix)
         similarities = cosine_similarity(user_matrix_sparse)
         return similarities
-
-    def generate_new_user(sim_matrix):
-        new_user = np.random.randint(2, size=(1,sim_matrix.shape[1]))
-        return new_user
 
     def get_similar_users(new_user,existing_users,num_users=5):
         new_matrix = np.append(new_user,existing_users,axis=0)
