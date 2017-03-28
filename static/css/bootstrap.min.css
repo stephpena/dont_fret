@@ -4801,3 +4801,28 @@ td.visible-print {
     display: none !important;
   }
 }
+
+
+.linedrop
+ {
+  margin:auto;
+  width:90%;
+  padding:10px;
+ }
+ select
+ {
+  display:inline;
+  cursor:pointer;
+ }
+.secondval
+ {
+  display:inline-block;
+ }
+form{
+    display:inline-block;
+}
+.gap
+ {
+  clear:both;
+  margin-bottom:2px;
+  }
