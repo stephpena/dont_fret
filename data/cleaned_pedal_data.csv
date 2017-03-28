@@ -22,7 +22,7 @@ Ampeg Sub-Blaster,Ampeg Sub-Blaster,Ampeg,Sub-Blaster,Octave,Bass,/items/ampeg-s
 AmpRx BrownBox,AmpRx BrownBox,AmpRx,BrownBox,Voltage Regulator,Guitar,/items/amprx-brownbox
 Amptweaker Tight Metal Pro Pedal,Amptweaker Tight Metal Pro,Amptweaker,Tight Metal Pro,Distortion,Guitar,/items/amptweaker-tight-metal-pro-pedal
 AmpTweaker TightDrive Pro,Amptweaker TightDrive Pro,Amptweaker,TightDrive Pro,Overdrive,Guitar,/items/amptweaker-tightdrive-pro
-M-Drive Amt,AMT M-Drive,AMT,M-Drive,Overdrive,Guitar,/items/m-drive-amt
+M-Drive Amt,AMT Electronics M-Drive,AMT Electronics,M-Drive,Overdrive,Guitar,/items/m-drive-amt
 Amt Electronics Ex-50 Expression Guitar Effects Pedal,AMT Electronics Ex-50 Expression,AMT Electronics,Ex-50 Expression,Expression,Guitar,/items/amt-electronics-ex-50-expression-guitar-effects-pedal
 AMT Japanese Girl Wah,AMT Electronics Japanese Girl Wah,AMT Electronics,Japanese Girl Wah,Wah,Guitar,/items/amt-japanese-girl-wah
 AMT Electronics Legend Amps Series E1 Distortion Guitar Effects Pedal,AMT Electronics Legend Amps Series E1 Distortion,AMT Electronics,Legend Amps Series E1 Distortion,Distortion,Guitar,/items/amt-electronics-legend-amps-series-e1-distortion-guitar-effects-pedal
@@ -340,7 +340,7 @@ Budda Karma Chorus Guitar Pedal,Budda Karma Chorus,Budda,Karma Chorus,Chorus,Gui
 Budda OM Overdrive Guitar Pedal,Budda OM Overdrive,Budda,OM Overdrive,Overdrive,Guitar,/items/budda-om-overdrive-guitar-pedal
 Budda Samsara Delay Guitar Effects Pedal,Budda Samsara Delay,Budda,Samsara Delay,Delay,Guitar,/items/budda-samsara-delay-guitar-effects-pedal
 Budda Zenman Overdrive Guitar Pedal,Budda Zenman Overdrive,Budda,Zenman Overdrive,Overdrive,Guitar,/items/budda-zenman-overdrive-guitar-pedal
-Buddha Phatman Zen,Buddha Phatman Zen,Buddha,Phatman Zen,Overdrive,Guitar,/items/buddha-phatman-zen
+Buddha Phatman Zen,Budda Phatman Zen,Budda,Phatman Zen,Overdrive,Guitar,/items/buddha-phatman-zen
 Buffalo Audio White Pony,Buffalo Audio White Pony,Buffalo Audio,White Pony,Overdrive,Guitar,/items/buffalo-audio-white-pony
 Buffalo FX 18v Power Booster,Buffalo FX 18v Power Booster,Buffalo FX,18v Power Booster,Booster,Guitar,/items/buffalo-fx-18v-power-booster
 Buffalo FX Germanium Fuzz.,Buffalo FX Germanium Fuzz,Buffalo FX,Germanium Fuzz,Fuzz,Guitar,/items/buffalo-fx-germanium-fuzz
@@ -373,7 +373,7 @@ Carl Martin PlexiTone single channel,Carl Martin PlexiTone single channel,Carl M
 Carl Martin Quattro,Carl Martin Quattro,Carl Martin,Quattro,Multi-Effects,Guitar,/items/carl-martin-quattro
 Carl Martin Surf Trem,Carl Martin Surf Trem,Carl Martin,Surf Trem,Tremolo,Guitar,/items/carl-martin-surf-trem
 Carl Martin The Fuzz,Carl Martin The Fuzz,Carl Martin,The Fuzz,Fuzz,Guitar,/items/carl-martin-the-fuzz
-Carl Martin TremOï_vibe,Carl Martin TremO'vibe,Carl Martin,TremO'vibe,Tremolo/Vibrato,Guitar,/items/carl-martin-tremo-vibe
+Carl Martin TremO•_vibe,Carl Martin TremO'vibe,Carl Martin,TremO'vibe,Tremolo/Vibrato,Guitar,/items/carl-martin-tremo-vibe
 Carl Martin Two Faze Phaser,Carl Martin Two Faze Phaser,Carl Martin,Two Faze Phaser,Phaser,Guitar,/items/carl-martin-two-faze-phaser
 Carlin Compressor,Carlin Compressor,Carlin,Compressor,Compressor,Guitar,/items/carlin-compressor
 Caroline Haymaker Dynamic Drive,Caroline Guitar Company Haymaker Dynamic Drive,Caroline Guitar Company,Haymaker Dynamic Drive,Overdrive,Guitar,/items/caroline-haymaker-dynamic-drive
@@ -732,7 +732,7 @@ Jimi Hendrix 70th Anniversary Tribute Series Fuzz Face Distortion,Dunlop Jimi He
 Jimi Hendrix Fuzz Face Distortion Pedal,Dunlop Jimi Hendrix Fuzz Face Distortion,Dunlop,Jimi Hendrix Fuzz Face Distortion,Distortion,Guitar,/items/jimi-hendrix-fuzz-face-distortion-pedal
 Dunlop Jimi Hendrix Fuzz Face Mini Distortion FFM3,Dunlop Jimi Hendrix Fuzz Face Mini Distortion FFM3,Dunlop,Jimi Hendrix Fuzz Face Mini Distortion FFM3,Distortion,Guitar,/items/dunlop-jimi-hendrix-fuzz-face-mini-distortion-ffm3
 Dunlop Jimi Hendrix JH1 Wah Guitar Effect Pedal,Dunlop Jimi Hendrix JH1 Wah Guitar Effect,Dunlop,Jimi Hendrix JH1 Wah Guitar Effect,Wah,Guitar,/items/dunlop-jimi-hendrix-jh1-wah-guitar-effect-pedal
-Dunlop Jimi Hendrix_æ¢ Signature Wah,Dunlop Jimi Hendrix Signature Wah,Dunlop,Jimi Hendrix Signature Wah,Wah,Guitar,/items/dunlop-jimi-hendrix-signature-wah
+Dunlop Jimi Hendrix__¢ Signature Wah,Dunlop Jimi Hendrix Signature Wah,Dunlop,Jimi Hendrix Signature Wah,Wah,Guitar,/items/dunlop-jimi-hendrix-signature-wah
 Dunlop Joe Bonamassa Fuzz Face JB-F3 Black,Dunlop Joe Bonamassa Fuzz Face JB-F3 Black,Dunlop,Joe Bonamassa Fuzz Face JB-F3 Black,Fuzz,Guitar,/items/dunlop-joe-bonamassa-fuzz-face-jb-f3-black
 Dunlop Joe Bonamassa Fuzz Face JB-F3 Copper Top,Dunlop Joe Bonamassa Fuzz Face JB-F3 Copper Top,Dunlop,Joe Bonamassa Fuzz Face JB-F3 Copper Top,Fuzz,Guitar,/items/dunlop-joe-bonamassa-fuzz-face-jb-f3-copper-top
 Dunlop John Petrucci Signature Crybaby Wah JP-95,Dunlop John Petrucci Signature Crybaby Wah JP-95,Dunlop,John Petrucci Signature Crybaby Wah JP-95,Wah,Guitar,/items/dunlop-john-petrucci-signature-crybaby-wah-jp-95
@@ -746,7 +746,7 @@ Dunlop Uni-Vibe Stereo Chorus,Dunlop Uni-Vibe Stereo Chorus,Dunlop,Uni-Vibe Ster
 Dunlop UV-1 Univibe,Dunlop UV-1 Univibe,Dunlop,UV-1 Univibe,Vibrato/Chorus,Guitar,/items/dunlop-uv-1-univibe
 Dunlop Volume X Mini Pedal DVP4,Dunlop Volume X Mini DVP4,Dunlop,Volume X Mini DVP4,Volume,Guitar,/items/dunlop-volume-x-mini-pedal-dvp4
 Dunlop WAH Andreas Kisser AK 95,Dunlop WAH Andreas Kisser AK 95,Dunlop,WAH Andreas Kisser AK 95,Wah,Guitar,/items/dunlop-wah-andreas-kisser-ak-95
-Dunlop Zakk Wylde Signature Rotovibeïë Chorus/Vibrato - ZW357,Dunlop Zakk Wylde Signature Rotovibe Chorus/Vibrato,Dunlop,Zakk Wylde Signature Rotovibe Chorus/Vibrato,Vibrato/Chorus,Guitar,/items/dunlop-zakk-wylde-signature-rotovibe-chorus-vibrato-zw357
+Dunlop Zakk Wylde Signature Rotovibe•‘ Chorus/Vibrato - ZW357,Dunlop Zakk Wylde Signature Rotovibe Chorus/Vibrato,Dunlop,Zakk Wylde Signature Rotovibe Chorus/Vibrato,Vibrato/Chorus,Guitar,/items/dunlop-zakk-wylde-signature-rotovibe-chorus-vibrato-zw357
 Durham Electronics Crazy Horse,Durham Electronics Crazy Horse,Durham Electronics,Crazy Horse,,Guitar,/items/durham-electronics-crazy-horse
 Durham Electronics Sex Drive,Durham Electronics Sex Drive,Durham Electronics,Sex Drive,Booster,Guitar,/items/durham-electronics-sex-drive
 Dwarfcraft Devices Eau Claire Thunder,Dwarfcraft Devices Eau Claire Thunder,Dwarfcraft Devices,Eau Claire Thunder,,Guitar,/items/dwarfcraft-devices-eau-claire-thunder
@@ -785,7 +785,7 @@ Earthquaker Devices Gray Channel,EarthQuaker Devices Gray Channel,EarthQuaker De
 EarthQuaker Devices Hoof,EarthQuaker Devices Hoof,EarthQuaker Devices,Hoof,,Guitar,/items/earthquaker-devices-hoof
 EarthQuaker Devices Hoof Reaper,EarthQuaker Devices Hoof Reaper,EarthQuaker Devices,Hoof Reaper,,Guitar,/items/earthquaker-devices-hoof-reaper
 EarthQuaker Devices Hummingbird,EarthQuaker Devices Hummingbird,EarthQuaker Devices,Hummingbird,,Guitar,/items/earthquaker-devices-hummingbird
-Earthquaker Devices Interstellar Orbiter _‹¢ Dual Resonant Filter,EarthQuaker Devices Interstellar Orbiter Dual Resonant Filter,EarthQuaker Devices,Interstellar Orbiter Dual Resonant Filter,,Guitar,/items/earthquaker-devices-interstellar-orbiter-dual-resonant-filter
+Earthquaker Devices Interstellar Orbiter _Ü¢ Dual Resonant Filter,EarthQuaker Devices Interstellar Orbiter Dual Resonant Filter,EarthQuaker Devices,Interstellar Orbiter Dual Resonant Filter,,Guitar,/items/earthquaker-devices-interstellar-orbiter-dual-resonant-filter
 EarthQuaker Devices Levitation Reverb,EarthQuaker Devices Levitation Reverb,EarthQuaker Devices,Levitation Reverb,Reverb,Guitar,/items/earthquaker-devices-levitation-reverb
 EarthQuaker Devices Monarch Overdrive Pedal,EarthQuaker Devices Monarch Overdrive,EarthQuaker Devices,Monarch Overdrive,Overdrive,Guitar,/items/earthquaker-devices-monarch-overdrive-pedal
 EarthQuaker Devices Organizer,EarthQuaker Devices Organizer,EarthQuaker Devices,Organizer,,Guitar,/items/earthquaker-devices-organizer
@@ -818,7 +818,7 @@ Effectrode PC-2A Compressor Pedal,Effectrode PC-2A Compressor,Effectrode,PC-2A C
 Effectrode Tube Drive Overdrive,Effectrode Tube Drive Overdrive,Effectrode,Tube Drive Overdrive,Overdrive,Guitar,/items/effectrode-tube-drive-overdrive
 Effectrode Tube-Vibe,Effectrode Tube-Vibe,Effectrode,Tube-Vibe,,Guitar,/items/effectrode-tube-vibe
 Electro faustus EF102 photo theremin,Electro-Faustus EF102 Photo Theremin,Electro-Faustus,EF102 Photo Theremin,,Guitar,/items/electro-faustus-ef102-photo-theremin
-Electro Faustus EF108 _‹_ Step Child,Electro-Faustus EF108 Step Child,Electro-Faustus,EF108 Step Child,,Guitar,/items/electro-faustus-ef108-step-child
+Electro Faustus EF108 _Ü_ Step Child,Electro-Faustus EF108 Step Child,Electro-Faustus,EF108 Step Child,,Guitar,/items/electro-faustus-ef108-step-child
 Electro-Harmonix #1 Echo Digital Delay Guitar Effects Pedal,Electro-Harmonix #1 Echo Digital Delay,Electro-Harmonix,#1 Echo Digital Delay,Delay,Guitar,/items/electro-harmonix-1-echo-digital-delay-guitar-effects-pedal
 Electro-Harmonix 16 Second Delay Pedal,Electro-Harmonix 16 Second Delay,Electro-Harmonix,16 Second Delay,Delay,Guitar,/items/electro-harmonix-16-second-delay-pedal
 Electro-Harmonix 45000 Multi-Track Looping Recorder,Electro-Harmonix 45000 Multi-Track Looping Recorder,Electro-Harmonix,45000 Multi-Track Looping Recorder,Looper,Guitar,/items/electro-harmonix-45000-multi-track-looping-recorder
@@ -1133,8 +1133,8 @@ Guitarsystems The Vibe Tool,Guitar Systems The Vibe Tool,Guitar Systems,The Vibe
 Guitar Systems Treble Tool,Guitar Systems Treble Tool,Guitar Systems,Treble Tool,,Guitar,/items/guitar-systems-treble-tool
 Guitar Tone Company Bloody Finger,Guitar Tone Company Bloody Finger,Guitar Tone Company,Bloody Finger,Distortion,Guitar,/items/guitar-tone-company-bloody-finger
 Gurus 1959 Doubledecker,Gurus 1959 Doubledecker,Gurus,1959 Doubledecker,,Guitar,/items/gurus-1959-doubledecker
-Gurus Echosex 2ïç,Gurus Echosex 2,Gurus,Echosex 2,,Guitar,/items/gurus-echosex-2
-Gurus Echosex 2ï_ Limited Edition,Gurus Echosex 2 Limited Edition,Gurus,Echosex 2 Limited Edition,,Guitar,/items/gurus-echosex-2-limited-edition
+Gurus Echosex 2•ç,Gurus Echosex 2,Gurus,Echosex 2,,Guitar,/items/gurus-echosex-2
+Gurus Echosex 2•_ Limited Edition,Gurus Echosex 2 Limited Edition,Gurus,Echosex 2 Limited Edition,,Guitar,/items/gurus-echosex-2-limited-edition
 Gurus OPTIVALVE,Gurus OPTIVALVE,Gurus,OPTIVALVE,,Guitar,/items/gurus-optivalve
 Guyatone Flanger,Guyatone Flanger,Guyatone,Flanger,Flanger,Guitar,/items/guyatone-flanger
 Guyatone MD-2,Guyatone MD-2,Guyatone,MD-2,Delay,Guitar,/items/guyatone-md-2
@@ -1290,7 +1290,7 @@ JHS Panther Cub Delay,JHS Panther Cub Delay,JHS,Panther Cub Delay,Delay,Guitar,/
 "JHS + PaxAm, Ryan Adams VCR",JHS PaxAm + Ryan Adams VCR,JHS,PaxAm + Ryan Adams VCR,,Guitar,/items/jhs-paxam-ryan-adams-vcr
 JHS Pollinator 3-Knob Germanium Fuzz,JHS Pollinator 3-Knob Germanium Fuzz,JHS,Pollinator 3-Knob Germanium Fuzz,Fuzz,Guitar,/items/jhs-pollinator-3-knob-germanium-fuzz
 JHS Prestige Buffer/Booster,JHS Prestige Buffer/Booster,JHS,Prestige Buffer/Booster,Booster/Buffer,Guitar,/items/jhs-prestige-buffer-booster
-JHS Pulp _‹€n Peel Compressor,JHS Pulp N Peel Compressor,JHS,Pulp N Peel Compressor,Compressor,Guitar,/items/jhs-pulp-n-peel-compressor
+JHS Pulp _ÜÛn Peel Compressor,JHS Pulp N Peel Compressor,JHS,Pulp N Peel Compressor,Compressor,Guitar,/items/jhs-pulp-n-peel-compressor
 JHS Ruby Red RR (Butch Walker Signature),JHS Ruby Red RR (Butch Walker Signature),JHS,Ruby Red RR (Butch Walker Signature),,Guitar,/items/jhs-ruby-red-rr-butch-walker-signature
 JHS Silver Panther Delay,JHS Silver Panther Delay,JHS,Silver Panther Delay,Delay,Guitar,/items/jhs-silver-panther-delay
 JHS SuperBolt,JHS SuperBolt,JHS,SuperBolt,,Guitar,/items/jhs-superbolt
@@ -1342,7 +1342,7 @@ Keeley True Bypass Looper,Keeley True Bypass Looper,Keeley,True Bypass Looper,Lo
 Keeley Vibe-O-Verb Effects Pedal,Keeley Vibe-O-Verb Effects,Keeley,Vibe-O-Verb Effects,Vibrato,Guitar,/items/keeley-vibe-o-verb-effects-pedal
 KHDK Dark Blood Distortion,KHDK Dark Blood Distortion,KHDK,Dark Blood Distortion,Distortion,Guitar,/items/khdk-dark-blood-distortion
 KHDK Ghoul Screamer Effect Pedal,KHDK Ghoul Screamer Effect,KHDK,Ghoul Screamer Effect,,Guitar,/items/khdk-ghoul-screamer-effect-pedal
-KHKD nïç1 Overdrive,KHDK No.1 Overdrive,KHDK,No.1 Overdrive,Overdrive,Guitar,/items/khkd-n-1-overdrive
+KHKD n•ç1 Overdrive,KHDK No.1 Overdrive,KHDK,No.1 Overdrive,Overdrive,Guitar,/items/khkd-n-1-overdrive
 Kikusui PCR1000M Power Supply,Kikusui PCR1000M Power Supply,Kikusui,PCR1000M Power Supply,Power Supply,Guitar,/items/kikusui-pcr1000m-power-supply
 Kingsley Jester OD/Boost,Kingsley Jester OD/Boost,Kingsley,Jester OD/Boost,Overdrive,Guitar,/items/kingsley-jester-od-boost
 Klemt Echolette NG51-S,Klemt Echolette NG51-S,Klemt,Echolette NG51-S,,Guitar,/items/klemt-echolette-ng51-s
@@ -1679,7 +1679,7 @@ MXR CSP-026 Handwired 1974 Vintage Phase 90 Pedal,MXR CSP-026 Handwired 1974 Vin
 MXR Il Torino Overdrive CSP033,MXR CSP033 Il Torino Overdrive,MXR,CSP033 Il Torino Overdrive,Overdrive,Guitar,/items/mxr-il-torino-overdrive-csp033
 MXR CSP099 Phase 99,MXR CSP099 Phase 99,MXR,CSP099 Phase 99,Phaser,Guitar,/items/mxr-csp099-phase-99
 MXR CSP101SL Script Phase 90 with LED,MXR CSP101SL Script Phase 90 with LED,MXR,CSP101SL Script Phase 90 with LED,Phaser,Guitar,/items/mxr-csp101sl-script-phase-90-with-led
-MXR La Machine _‹_ CSP203,MXR CSP203 La Machine,MXR,CSP203 La Machine,,Guitar,/items/mxr-la-machine-csp203
+MXR La Machine _Ü_ CSP203,MXR CSP203 La Machine,MXR,CSP203 La Machine,,Guitar,/items/mxr-la-machine-csp203
 MXR CSP233 Micro Amp Plus,MXR CSP233 Micro Amp Plus,MXR,CSP233 Micro Amp Plus,Booster,Guitar,/items/mxr-csp233-micro-amp-plus
 MXR Custom Comp CSP202,MXR Custom Comp CSP202,MXR,Custom Comp CSP202,Compressor,Guitar,/items/mxr-custom-comp-csp202
 MXR Custom Shop CSP-101CL Script Logo Phase 90 with LED,MXR Custom Shop CSP-101CL Script Logo Phase 90 with LED,MXR,Custom Shop CSP-101CL Script Logo Phase 90 with LED,Phaser,Guitar,/items/mxr-custom-shop-csp-101cl-script-logo-phase-90-with-led
@@ -1687,7 +1687,7 @@ MXR Custom Shop CSP028 Vintage Dyna Comp Compressor Guitar Effects Pedal,MXR Cus
 MXR Custom Shop CSP105 Vintage '75 Phase 45 Phaser Guitar Effects Pedal,MXR Custom Shop CSP105 Vintage '75 Phase 45 Phaser,MXR,Custom Shop CSP105 Vintage '75 Phase 45 Phaser,Phaser,Guitar,/items/mxr-custom-shop-csp105-vintage-75-phase-45-phaser-guitar-effects-pedal
 MXR Custom Shop GT-OD Overdrive,MXR Custom Shop GT-OD Overdrive,MXR,Custom Shop GT-OD Overdrive,Overdrive,Guitar,/items/mxr-custom-shop-gt-od-overdrive
 MXR Custom Shop Joe Bonamassa CSP265 FET Driver,MXR Custom Shop Joe Bonamassa CSP265 FET Driver,MXR,Custom Shop Joe Bonamassa CSP265 FET Driver,Overdrive,Guitar,/items/mxr-custom-shop-joe-bonamassa-csp265-fet-driver
-MXR DC Brick_æ¢ Power Supply _‹_ M237,MXR DC Brick Power Supply M237,MXR,DC Brick Power Supply M237,Power Supply,Guitar,/items/mxr-dc-brick-power-supply-m237
+MXR DC Brick__¢ Power Supply _Ü_ M237,MXR DC Brick Power Supply M237,MXR,DC Brick Power Supply M237,Power Supply,Guitar,/items/mxr-dc-brick-power-supply-m237
 MXR DD11 Dimebag Distortion Pedal,MXR DD11 Dimebag Distortion,MXR,DD11 Dimebag Distortion,Distortion,Guitar,/items/mxr-dd11-dimebag-distortion-pedal
 MXR distortion + (late seventies model),MXR Distortion +,MXR,Distortion +,Distortion,Guitar,/items/mxr-distortion-late-seventies-model
 MXR Distortion II,MXR Distortion II,MXR,Distortion II,Distortion,Guitar,/items/mxr-distortion-ii
@@ -1714,7 +1714,7 @@ MXR M-104 Distortion + Guitar Pedal,MXR M104 Distortion + Guitar,MXR,M104 Distor
 MXR M-107 Phase 100 Effects Pedal,MXR M107 Phase 100 Effects,MXR,M107 Phase 100 Effects,Phaser,Guitar,/items/mxr-m-107-phase-100-effects-pedal
 MXR M-108 Ten Band Graphic Equalizer Pedal,MXR M108 Ten Band Graphic Equalizer,MXR,M108 Ten Band Graphic Equalizer,Equalizer,Guitar,/items/mxr-m-108-ten-band-graphic-equalizer-pedal
 MXR M-109 6-Band Graphic EQ,MXR M109 6Band Graphic EQ,MXR,M109 6Band Graphic EQ,Equalizer,Guitar,/items/mxr-m-109-6-band-graphic-eq
-MXR Fullboreïë Metal _‹_ M116,MXR M116 Fullbore Metal,MXR,M116 Fullbore Metal,Distortion,Guitar,/items/mxr-fullbore-metal-m116
+MXR Fullbore•‘ Metal _Ü_ M116,MXR M116 Fullbore Metal,MXR,M116 Fullbore Metal,Distortion,Guitar,/items/mxr-fullbore-metal-m116
 MXR M-117 flanger,MXR M117 flanger,MXR,M117 flanger,Flanger,Guitar,/items/mxr-m-117-flanger
 MXR M-132 Super Comp Compressor Pedal,MXR M132 Super Comp Compressor,MXR,M132 Super Comp Compressor,Compressor,Guitar,/items/mxr-m-132-super-comp-compressor-pedal
 MXR M-133 Micro Amp Pedal,MXR M133 Micro Amp,MXR,M133 Micro Amp,Booster,Guitar,/items/mxr-m-133-micro-amp-pedal
@@ -1722,7 +1722,7 @@ MXR M134 Stereo Chorus,MXR M134 Stereo Chorus,MXR,M134 Stereo Chorus,Chorus,Guit
 MXR M135 Smart Gate Noise Gate,MXR M135 Smart Gate Noise Gate,MXR,M135 Smart Gate Noise Gate,Noise Suppressor,Guitar,/items/mxr-m135-smart-gate-noise-gate
 MXR Micro Chorus M148,MXR M148 Micro Chorus,MXR,M148 Micro Chorus,Chorus,Guitar,/items/mxr-micro-chorus-m148
 MXR M-151 Doubleshot Distortion Pedal,MXR M151 Doubleshot Distortion,MXR,M151 Doubleshot Distortion,Distortion,Guitar,/items/mxr-m-151-doubleshot-distortion-pedal
-MXR Micro Flanger _‹_ M152,MXR M152 Micro Flanger,MXR,M152 Micro Flanger,Flanger,Guitar,/items/mxr-micro-flanger-m152
+MXR Micro Flanger _Ü_ M152,MXR M152 Micro Flanger,MXR,M152 Micro Flanger,Flanger,Guitar,/items/mxr-micro-flanger-m152
 MXR M-159 Stereo Tremolo Pan,MXR M159 Stereo Tremolo Pan,MXR,M159 Stereo Tremolo Pan,Tremolo,Guitar,/items/mxr-m-159-stereo-tremolo-pan
 MXR M-161 Commando Phaser Pedal,MXR M161 Commando Phaser,MXR,M161 Commando Phaser,Phaser,Guitar,/items/mxr-m-161-commando-phaser-pedal
 MXR M169 Carbon Copy Analog Delay,MXR M169 Carbon Copy Analog Delay,MXR,M169 Carbon Copy Analog Delay,Delay,Guitar,/items/mxr-m169-carbon-copy-analog-delay
@@ -1734,7 +1734,7 @@ MXR Tap Tempo Switch M199,MXR M199 Tap Tempo Switch,MXR,M199 Tap Tempo Switch,,G
 MXR M-205 Stereo Chorus Pedal,MXR M205 Stereo Chorus,MXR,M205 Stereo Chorus,Chorus,Guitar,/items/mxr-m-205-stereo-chorus-pedal
 MXR M222 Talk Box,MXR M222 Talk Box,MXR,M222 Talk Box,,Guitar,/items/mxr-m222-talk-box
 MXR M-234 Analog Chorus,MXR M234 Analog Chorus,MXR,M234 Analog Chorus,Chorus,Guitar,/items/mxr-m-234-analog-chorus
-MXR Smart Gateïë Pro M235,MXR M235 Smart Gate Pro,MXR,M235 Smart Gate Pro,Noise Suppressor,Guitar,/items/mxr-smart-gate-pro-m235
+MXR Smart Gate•‘ Pro M235,MXR M235 Smart Gate Pro,MXR,M235 Smart Gate Pro,Noise Suppressor,Guitar,/items/mxr-smart-gate-pro-m235
 MXR M288 Bass Octave Deluxe Effects Pedal,MXR M288 Bass Octave Deluxe Effects,MXR,M288 Bass Octave Deluxe Effects,Octave,Guitar,/items/mxr-m288-bass-octave-deluxe-effects-pedal
 MXR Reverb M300,MXR M300 Reverb,MXR,M300 Reverb,Reverb,Guitar,/items/mxr-reverb-m300
 MXR M66S Classic Overdrive Guitar Effects Pedal,MXR M66S Classic Overdrive,MXR,M66S Classic Overdrive,Overdrive,Guitar,/items/mxr-m66s-classic-overdrive-guitar-effects-pedal
@@ -1881,7 +1881,7 @@ Providence Heat Blaster Distortion,Providence Heat Blaster Distortion,Providence
 Providence Stampede DT,Providence Stampede DT,Providence,Stampede DT,,Guitar,/items/providence-stampede-dt
 R3D Electronics Goldfinger Fuzz Pedal,R3D Electronics Goldfinger Fuzz,R3D Electronics,Goldfinger Fuzz,Fuzz,Guitar,/items/r3d-electronics-goldfinger-fuzz-pedal
 R3D Electronics Kentaur Overdrive Pedal,R3D Electronics Kentaur Overdrive,R3D Electronics,Kentaur Overdrive,Overdrive,Guitar,/items/r3d-electronics-kentaur-overdrive-pedal
-Radial Engineering BigShot_æ¢ ABY True Bypass Switcher,Radial Engineering BigShot ABY True Bypass Switcher,Radial Engineering,BigShot ABY True Bypass Switcher,Switch Box,Guitar,/items/radial-engineering-bigshot-aby-true-bypass-switcher
+Radial Engineering BigShot__¢ ABY True Bypass Switcher,Radial Engineering BigShot ABY True Bypass Switcher,Radial Engineering,BigShot ABY True Bypass Switcher,Switch Box,Guitar,/items/radial-engineering-bigshot-aby-true-bypass-switcher
 Radial Engineering Bigshot Efx Effects Loop,Radial Engineering Bigshot Efx Effects Loop,Radial Engineering,Bigshot Efx Effects Loop,,Guitar,/items/radial-engineering-bigshot-efx-effects-loop
 Radial Engineering BigShot PB1 Class-A Power Booster,Radial Engineering BigShot PB1 Class-A Power Booster,Radial Engineering,BigShot PB1 Class-A Power Booster,Booster,Guitar,/items/radial-engineering-bigshot-pb1-class-a-power-booster
 Radial Bones Hollywood Distortion,Radial Engineering Bones Hollywood Distortion,Radial Engineering,Bones Hollywood Distortion,Distortion,Guitar,/items/radial-bones-hollywood-distortion
@@ -2159,7 +2159,7 @@ T-Rex Engineering FuelTank Classic Power Supply,T-Rex Engineering FuelTank Class
 T-Rex Engineering Gristle King,T-Rex Engineering Gristle King,T-Rex Engineering,Gristle King,,Guitar,/items/t-rex-engineering-gristle-king
 T-Rex Luxury Drive (Gristle Line - Booster),T-Rex Engineering Luxury Drive (Gristle Line - Booster),T-Rex Engineering,Luxury Drive (Gristle Line - Booster),,Guitar,/items/t-rex-luxury-drive-gristle-line-booster
 T-Rex Mark Tremonti Phaser,T-Rex Engineering Mark Tremonti Phaser,T-Rex Engineering,Mark Tremonti Phaser,,Guitar,/items/t-rex-mark-tremonti-phaser
-T-Rex Engineeringï_Michael Angelo Batio Overdrive Guitar Pedal,T-Rex Engineering Michael Angelo Batio Overdrive Guitar,T-Rex Engineering,Michael Angelo Batio Overdrive Guitar,,Guitar,/items/t-rex-engineering-michael-angelo-batio-overdrive-guitar-pedal
+T-Rex Engineering•_Michael Angelo Batio Overdrive Guitar Pedal,T-Rex Engineering Michael Angelo Batio Overdrive Guitar,T-Rex Engineering,Michael Angelo Batio Overdrive Guitar,,Guitar,/items/t-rex-engineering-michael-angelo-batio-overdrive-guitar-pedal
 T-Rex Moller Overdrive Pedal,T-Rex Engineering Moller Overdrive,T-Rex Engineering,Moller Overdrive,,Guitar,/items/t-rex-moller-overdrive-pedal
 T-Rex Engineering Mudhoney Distortion Pedal,T-Rex Engineering Mudhoney Distortion,T-Rex Engineering,Mudhoney Distortion,,Guitar,/items/t-rex-engineering-mudhoney-distortion-pedal
 T-Rex Engineering Mudhoney II Dual Distortion Pedal,T-Rex Engineering Mudhoney II Dual Distortion,T-Rex Engineering,Mudhoney II Dual Distortion,,Guitar,/items/t-rex-engineering-mudhoney-ii-dual-distortion-pedal
@@ -2358,7 +2358,7 @@ Voodoo Labs Giggity,Voodoo Lab Giggity,Voodoo Lab,Giggity,,Guitar,/items/voodoo-
 Voodoo Lab HEX Audio Loop Switcher,Voodoo Lab HEX Audio Loop Switcher,Voodoo Lab,HEX Audio Loop Switcher,,Guitar,/items/voodoo-lab-hex-audio-loop-switcher
 Voodoo Lab Micro Vibe Vintage Rotary Speaker Pedal,Voodoo Lab Micro Vibe Vintage Rotary Speaker,Voodoo Lab,Micro Vibe Vintage Rotary Speaker,,Guitar,/items/voodoo-lab-micro-vibe-vintage-rotary-speaker-pedal
 Voodoo Lab Pedal Power 2 Plus,Voodoo Lab Power 2 Plus,Voodoo Lab,Power 2 Plus,,Guitar,/items/voodoo-lab-pedal-power-2-plus
-Voodoo Lab - Pedal Powerïë 4x4,Voodoo Lab Power 4x4,Voodoo Lab,Power 4x4,,Guitar,/items/voodoo-lab-pedal-power-4x4
+Voodoo Lab - Pedal Power•‘ 4x4,Voodoo Lab Power 4x4,Voodoo Lab,Power 4x4,,Guitar,/items/voodoo-lab-pedal-power-4x4
 Voodoo Lab Pedal Power AC,Voodoo Lab Power AC,Voodoo Lab,Power AC,,Guitar,/items/voodoo-lab-pedal-power-ac
 Voodoo Lab Pedal Power Digital Power Supply,Voodoo Lab Power Digital Power Supply,Voodoo Lab,Power Digital Power Supply,,Guitar,/items/voodoo-lab-pedal-power-digital-power-supply
 Voodoo Lab Pedal Power ISO-5,Voodoo Lab Power ISO-5,Voodoo Lab,Power ISO-5,,Guitar,/items/voodoo-lab-pedal-power-iso-5
@@ -2445,7 +2445,7 @@ Way Huge Electronics Aqua-Puss Original Analog Delay Guitar Effects Pedal,Way Hu
 Way Huge Electronics Camel Toe Triple Overdrive,Way Huge Electronics Camel Toe Triple Overdrive,Way Huge Electronics,Camel Toe Triple Overdrive,,Guitar,/items/way-huge-electronics-camel-toe-triple-overdrive
 Way Huge Echo Puss Analog Delay,Way Huge Electronics Echo Puss Analog Delay,Way Huge Electronics,Echo Puss Analog Delay,,Guitar,/items/way-huge-echo-puss-analog-delay
 Way Huge Electronics Green Rhino MkII Overdrive Guitar Effects Pedal,Way Huge Electronics Green Rhino MkII Overdrive,Way Huge Electronics,Green Rhino MkII Overdrive,,Guitar,/items/way-huge-electronics-green-rhino-mkii-overdrive-guitar-effects-pedal
-Way Huge Electronics Green Rhino_æ¢ Overdrive MKIV WHE207,Way Huge Electronics Green Rhino Overdrive MKIV WHE207,Way Huge Electronics,Green Rhino Overdrive MKIV WHE207,,Guitar,/items/way-huge-electronics-green-rhino-overdrive-mkiv-whe207
+Way Huge Electronics Green Rhino__¢ Overdrive MKIV WHE207,Way Huge Electronics Green Rhino Overdrive MKIV WHE207,Way Huge Electronics,Green Rhino Overdrive MKIV WHE207,,Guitar,/items/way-huge-electronics-green-rhino-overdrive-mkiv-whe207
 Way Huge Overrated Special Overdrive,Way Huge Electronics Overrated Special Overdrive,Way Huge Electronics,Overrated Special Overdrive,,Guitar,/items/way-huge-overrated-special-overdrive
 Way Huge Pork Loin Overdrive,Way Huge Electronics Pork Loin Overdrive,Way Huge Electronics,Pork Loin Overdrive,,Guitar,/items/way-huge-pork-loin-overdrive
 Way Huge Red Llama Overdrive,Way Huge Electronics Red Llama Overdrive,Way Huge Electronics,Red Llama Overdrive,,Guitar,/items/way-huge-red-llama-overdrive
@@ -2473,7 +2473,7 @@ Wren and Cuff Box of War,Wren and Cuff Box of War,Wren and Cuff,Box of War,,Guit
 Wren and Cuff Caprid Pedal,Wren and Cuff Caprid,Wren and Cuff,Caprid,,Guitar,/items/wren-and-cuff-caprid-pedal
 Wren & Cuff Eye See Pi Op-Amp Distortion,Wren and Cuff Eye See Pi Op-Amp Distortion,Wren and Cuff,Eye See Pi Op-Amp Distortion,,Guitar,/items/wren-cuff-eye-see-pi-op-amp-distortion
 Wren and Cuff Tall Font Russian,Wren and Cuff Tall Font Russian,Wren and Cuff,Tall Font Russian,,Guitar,/items/wren-and-cuff-tall-font-russian
-BB Preamp Andy Timmons Signature,Xotic BB Preamp Andy Timmons Signature,Xotic,BB Preamp Andy Timmons Signature,Pre-Amp,Guitar,/items/bb-preamp-andy-timmons-signature
+BB Preamp Andy Timmons Signature,Xotic Effects BB Preamp Andy Timmons Signature,Xotic Effects,BB Preamp Andy Timmons Signature,Pre-Amp,Guitar,/items/bb-preamp-andy-timmons-signature
 Xotic Effects AC Booster Overdrive Pedal,Xotic Effects AC Booster Overdrive,Xotic Effects,AC Booster Overdrive,,Guitar,/items/xotic-effects-ac-booster-overdrive-pedal
 Xotic AC Plus - 2-channel Boost/Overdrive Pedal with Compressor and EQ,Xotic Effects AC Plus 2-channel Boost/Overdrive with Compressor and EQ,Xotic Effects,AC Plus 2-channel Boost/Overdrive with Compressor and EQ,,Guitar,/items/xotic-ac-plus-2-channel-boost-overdrive-pedal-with-compressor-and-eq
 Xotic Effects BB Plus Preamp and Boost,Xotic Effects BB Plus Preamp and Boost,Xotic Effects,BB Plus Preamp and Boost,,Guitar,/items/xotic-effects-bb-plus-preamp-and-boost
