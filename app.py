@@ -70,10 +70,10 @@ def get_data():
      'Empress Compressor']
     df = table_df[table_df['cleaned_name'].isin(pedal_list)]
     df = df.drop('cleaned_name',axis=1)
-    df.columns = ['Brand','Pedal','Category','Instrument','Equipboard URL']    return df
+    df.columns = ['Brand','Pedal','Category','Instrument','Equipboard URL']
     return df
 
-model = load_model('src/model.pkl')
+# model = load_model('data/firstmodel/')
 
 
 if __name__ == '__main__':
