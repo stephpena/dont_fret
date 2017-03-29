@@ -11,25 +11,23 @@ import numpy as np
 import equipdata as ed
 
 class PedalQuestionBot(object):
-"""
-Bot built to generate random results to user questionnaire
-
-Attributes
-----------
-user_total_df:
-    The existing user dataframe of users(rows) and items(columns).
-    Items are either pedals, genres, or similar artists
-    Consists of 0 or 1 depending on if the user has the item/genre/artist
-num_users:
-    The number of random new users to generate.
-
-Methods
--------
-new_user()
-multi_new_user_matrix(num_users)
-"""
-
-
+# """
+# Bot built to generate random results to user questionnaire
+# 
+# Attributes
+# ----------
+# user_total_df:
+#     The existing user dataframe of users(rows) and items(columns).
+#     Items are either pedals, genres, or similar artists
+#     Consists of 0 or 1 depending on if the user has the item/genre/artist
+# num_users:
+#     The number of random new users to generate.
+#
+# Methods
+# -------
+# new_user()
+# multi_new_user_matrix(num_users)
+# """
 
     def __init__(self):
         self.user_total_df = ed.user_total_pivot()

@@ -8,19 +8,19 @@ def decode_text(list_name):
         a.append(x.decode('utf-8'))
     return a
 
-with open('data/artist_df.csv') as f:
-    artist_df = pd.read_csv(f)
-artist_names = list(artist_df['artist_name'])
-artist_names = decode_text(artist_names)
+def import_files(filename,format):
+    with open(filename) as f:
+        if format == 'csv':
+            file_data = pd.read_csv(f)
+        else:
+            file_data = json.load(f)
+    return file_data
 
-with open('data/cleaned_pedal_data.csv') as f:
-    pedal_data = pd.read_csv(f)
-with open('data/artist_data.json') as f:
-    artist_data = json.load(f)
 
 clean_pedal_data = pedal_data.drop('equipment_name',axis=1)
 clean_pedal_data = clean_pedal_data.drop_duplicates()
 clean_pedal_data.reset_index(drop=True,inplace=True)
+
 
 fix = [u'Blues',
  u'Brass & Military',
