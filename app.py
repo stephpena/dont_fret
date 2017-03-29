@@ -1,8 +1,27 @@
+from flask import Flask, render_template, request, jsonify
 import pandas as pd
 import numpy as np
-from flask import Flask, render_template, request, jsonify
+import json
+import sys
+import cPickle as pickle
+import requests
 app = Flask(__name__)
 
+def load_model(filename):
+    """
+    Loads and returns trained sklearn random forest model.
+    Parameters
+    ----------
+    filename: str
+        The filename/path of the pickled model
+    Returns
+    -------
+    model:
+        Trained sklearn random forest model
+    """
+    with open(filename) as f:
+        model = pickle.load(f)
+    return model
 
 @app.route('/', methods=['GET'])
 def index():
@@ -14,9 +33,12 @@ def pedal():
     df = df.to_html(index=False)
     df = df.replace('class="dataframe">','id="data-types" class="dataframe>"')
     return render_template('pedal.html',tables=[df])
-# @app.route('/test', methods=['GET'])
-# def test():
-#     return render_template('test.html')
+
+
+@app.route('/answers', methods=['POST'])
+def test():
+    return render_template('test.html')
+
 
 def get_data():
     with open('data/cleaned_pedal_data.csv') as f:
@@ -48,20 +70,11 @@ def get_data():
      'Empress Compressor']
     df = table_df[table_df['cleaned_name'].isin(pedal_list)]
     df = df.drop('cleaned_name',axis=1)
-    df = df.rename({'brand_name': 'Brand','product_name': 'Pedal','product_category': 'Category','instrument_type': 'Instrument','equipment_url': 'Equipboard URL'})
+    df.columns = ['Brand','Pedal','Category','Instrument','Equipboard URL']    return df
     return df
 
+model = load_model('src/model.pkl')
 
-@app.route('/')
-def brand_list():
-    brands = ["Boss","Korg","Electro-Harmonix","Budda","Blackstar","Bogner","Digitech","Fulltone","Dunlop"]
-    return brands
-brands = brand_list()
-
-def genre_list():
-    genres = []
-    return genres
-genres = genre_list()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', threaded=True)
