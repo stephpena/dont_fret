@@ -73,7 +73,8 @@ def get_data():
     df.columns = ['Brand','Pedal','Category','Instrument','Equipboard URL']
     return df
 
-# model = load_model('data/firstmodel/')
+
+# model = load_model('src/model.pkl')
 
 
 if __name__ == '__main__':

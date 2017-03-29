@@ -130,7 +130,7 @@ $( function() {
       });
 } );
 
-$(function pedalmap() {
+jQuery(function($) {
     var mapping = {
         'Boss': ['DS-1', 'TU-3', 'PS-2'],
         'TC Electronic': ['Ditto Looper'],
@@ -142,17 +142,17 @@ $(function pedalmap() {
         'Russia': ['St. Petersburg'],
     }
 
-
-
     var $mapping = $('#pedalname');
     $('#brand').change(function () {
-        var brand = $(this).val(), lcns = mapping[brand] || [];
+        var brand = $(this).val(), lcns = locations[brand] || [];
+
         var html = $.map(lcns, function(lcn){
             return '<option value="' + lcn + '">' + lcn + '</option>'
         }).join('');
         $mapping.html(html)
     });
 });
+
 
 // show recommendations table after button click
 function showTable() {
@@ -162,6 +162,11 @@ function showTable() {
 
 // add more pedal data
 $("#addMore").click(function(){
-    $(".linedrop:first").clone(true).append('<button id="remove">-</button>').appendTo(".ui-widget");
+    $(".linedrop:first").clone().append('<button id="remove">-</button>').appendTo(".ui-widget");
     $(".linedrop:last").empty();
+});
+
+// remove unwanted pedal data
+$(document).on("click", "#remove", function(){
+   $(this).parent('div').remove();
 });
