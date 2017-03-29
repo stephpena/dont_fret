@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head lang="en">
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -15,8 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
 
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-
+	<link id="data-types_style" type="text/css" rel="stylesheet" href="../static/css/tablefilter.css">
 	<link rel="prefetch" href="../static/images/zoom.png">
 
 </head>
@@ -88,9 +88,10 @@
 							<br>Enter multiple values separated by a comma</label><br>
 						<input id="artisttags" size="50" placeholder="Choose value(s) from existing set"><br><br>
 						<label for ="brandtags">Select any existing pedal(s) you own:</label>
+						<button id="addMore">Add Pedal</button>
 							<div class="linedrop">
 									<label>Brand</label>
-							    <select id="brand" name="brand">
+							    <select class = "brand" name="brand">
 							        <option></option>
 											<option>2 Note</option>
 											<option>3Leaf</option>
@@ -588,590 +589,105 @@
 							    </select>
 								<label class="pedaltags">Pedal Name</label>
 								<div class="secondval">
-								    <select id="pedalname" name="pedalname"></select>
-										<button id="addMore">Add Pedal</button>
+								    <select class="pedalname"></select>
+										<!-- <button id="remove">-</button> -->
 								</div>
 							</div>
 					</div>
 				</div>
-				<button id="submit">Get Recommendations!</button>
+				<button href="#" onclick='showTable();'>Get Recommendations!</button>
 			<div class="row title-row">
 				<br><br>
 				<div class="col-12 font-semibold">Pedal Recommendations</div>
 			</div><!-- /row -->
 			<div class="row content-row">
-				<div style="float:left; width:auto;">
-				<p align="right">
-					<input type="button" value="Add paging" onclick="
-							if( tf.paging ) return;
-							tf.AddPaging(true); //easy way to add paging when filter grid bar is already set or behaviour is removed ">
-					<input type="button" value="Remove paging" onclick="
-							if( !tf.paging ) return;
-							tf.paging = false; //behaviour is removed here
-							tf.RemovePaging();
-							tf.Filter();">
-				</p>
-				<table id="results" cellpadding="0" cellspacing="0" width="100%"align="center" border="1" class="results">
-					<thead>
-						<tr>
-							<th _sorttype="string" style="width: 15%; cursor: pointer;">Brand</th>
-							<th _sorttype="string" style="width: 15%; cursor: pointer;">Pedal</th>
-							<th align="right" _sorttype="us" style="width: 15%; cursor: pointer;">Category</th>
-							<th align="right" _sorttype="us" style="width: 15%; cursor: pointer;">Instrument</th>
-							<th align="right" _sorttype="us" style="width: 15%; cursor: pointer;">Equipboard URL</th>
-						</tr>
-						<tr class="fltrow">
-							<td>
-								<select id="flt0" ct="0" filled="1" class="fit">
-									<option value>< Show All ></option>
-									<option value="2 Note">2 Note</option>
-									<option value="3Leaf">3Leaf</option>
-									<option value="4114 Custom Effects">4114 Custom Effects</option>
-									<option value="A/DA">A/DA</option>
-									<option value="Abbott's Music">Abbott's Music</option>
-									<option value="Adventure Audio">Adventure Audio</option>
-									<option value="AER">AER</option>
-									<option value="Aguilar">Aguilar</option>
-									<option value="Aion">Aion</option>
-									<option value="Airis Effects">Airis Effects</option>
-									<option value="Akai">Akai</option>
-									<option value="Alien">Alien</option>
-									<option value="Ampeg">Ampeg</option>
-									<option value="AmpRx">AmpRx</option>
-									<option value="Amptweaker">Amptweaker</option>
-									<option value="AMT Electronics">AMT Electronics</option>
-									<option value="Analogman">Analogman</option>
-									<option value="Anasounds">Anasounds</option>
-									<option value="Aphex">Aphex</option>
-									<option value="Arbiter">Arbiter</option>
-									<option value="ARC Effects">ARC Effects</option>
-									<option value="Arion">Arion</option>
-									<option value="Artec">Artec</option>
-									<option value="Ashdown Engineering">Ashdown Engineering</option>
-									<option value="Atomic Amps">Atomic Amps</option>
-									<option value="Austone">Austone</option>
-									<option value="AYA">AYA</option>
-									<option value="Bad Cat">Bad Cat</option>
-									<option value="Banzai">Banzai</option>
-									<option value="Barbarossa">Barbarossa</option>
-									<option value="Barber">Barber</option>
-									<option value="Basic">Basic</option>
-									<option value="BBE">BBE</option>
-									<option value="BearFoot FX">BearFoot FX</option>
-									<option value="Behringer">Behringer</option>
-									<option value="Belcat">Belcat</option>
-									<option value="Bell ADT">Bell ADT</option>
-									<option value="Berkos FX">Berkos FX</option>
-									<option value="Beta Aivin">Beta Aivin</option>
-									<option value="Big Ear N.Y.C.">Big Ear N.Y.C.</option>
-									<option value="Big Joe Stomp Box Company">Big Joe Stomp Box Company</option>
-									<option value="Bigfoot FX">Bigfoot FX</option>
-									<option value="Binson">Binson</option>
-									<option value="Bixonic">Bixonic</option>
-									<option value="Biyang">Biyang</option>
-									<option value="BJFE">BJFE</option>
-									<option value="BK Butler">BK Butler</option>
-									<option value="Black Arts Toneworks">Black Arts Toneworks</option>
-									<option value="Black Cats">Black Cats</option>
-									<option value="Black Out">Black Out</option>
-									<option value="Blackout Effectors">Blackout Effectors</option>
-									<option value="Blackstar">Blackstar</option>
-									<option value="Blackstone">Blackstone</option>
-									<option value="Blues Saraceno">Blues Saraceno</option>
-									<option value="BMF Effects">BMF Effects</option>
-									<option value="Bogner">Bogner</option>
-									<option value="Bondi Effects">Bondi Effects</option>
-									<option value="Boomerang">Boomerang</option>
-									<option value="Boorocks">Boorocks</option>
-									<option value="Boss">Boss</option>
-									<option value="Bright Onion">Bright Onion</option>
-									<option value="British Pedal Company">British Pedal Company</option>
-									<option value="Broadcast">Broadcast</option>
-									<option value="BSS">BSS</option>
-									<option value="Budda">Budda</option>
-									<option value="Buffalo Audio">Buffalo Audio</option>
-									<option value="Buffalo FX">Buffalo FX</option>
-									<option value="Burkey">Burkey</option>
-									<option value="BYOC">BYOC</option>
-									<option value="CAE">CAE</option>
-									<option value="Caline">Caline</option>
-									<option value="Cameltone">Cameltone</option>
-									<option value="Carl Martin">Carl Martin</option>
-									<option value="Carlin">Carlin</option>
-									<option value="Caroline Guitar Company">Caroline Guitar Company</option>
-									<option value="Catalinbread">Catalinbread</option>
-									<option value="CFD">CFD</option>
-									<option value="Chadderbox">Chadderbox</option>
-									<option value="Chandler">Chandler</option>
-									<option value="Chase Bliss Audio">Chase Bliss Audio</option>
-									<option value="Chicago Iron">Chicago Iron</option>
-									<option value="Chuck Collins">Chuck Collins</option>
-									<option value="CIOKS">CIOKS</option>
-									<option value="Circus Freak">Circus Freak</option>
-									<option value="CKK Electronic">CKK Electronic</option>
-									<option value="Classic Audio Effects">Classic Audio Effects</option>
-									<option value="Cluster">Cluster</option>
-									<option value="CMATMODS">CMATMODS</option>
-									<option value="Coffin Case">Coffin Case</option>
-									<option value="Colorsound">Colorsound</option>
-									<option value="Conn">Conn</option>
-									<option value="Coolpedals">Coolpedals</option>
-									<option value="Coopersonic">Coopersonic</option>
-									<option value="Cornish">Cornish</option>
-									<option value="Crazy Tube Circuits">Crazy Tube Circuits</option>
-									<option value="Creation Audio Labs">Creation Audio Labs</option>
-									<option value="Crews Maniac Sound">Crews Maniac Sound</option>
-									<option value="Crown">Crown</option>
-									<option value="Crowther">Crowther</option>
-									<option value="Crumar">Crumar</option>
-									<option value="Cruzer by Crafter">Cruzer by Crafter</option>
-									<option value="Cult">Cult</option>
-									<option value="Cusack">Cusack</option>
-									<option value="Custom Audio Electronics">Custom Audio Electronics</option>
-									<option value="D'Amico">D'Amico</option>
-									<option value="Dallas">Dallas</option>
-									<option value="Dan Armstrong">Dan Armstrong</option>
-									<option value="Dan'amp">Dan'amp</option>
-									<option value="Danelectro">Danelectro</option>
-									<option value="Darkglass">Darkglass</option>
-									<option value="DBX">DBX</option>
-									<option value="Dean Markley">Dean Markley</option>
-									<option value="DeArmond">DeArmond</option>
-									<option value="Death by Audio">Death by Audio</option>
-									<option value="Decibel Eleven">Decibel Eleven</option>
-									<option value="Dedalo">Dedalo</option>
-									<option value="Deep Trip">Deep Trip</option>
-									<option value="DeltaLab">DeltaLab</option>
-									<option value="Demeter">Demeter</option>
-									<option value="Devi Ever">Devi Ever</option>
-									<option value="Diamond">Diamond</option>
-									<option value="Diaz">Diaz</option>
-									<option value="DigiTech">DigiTech</option>
-									<option value="Dinosaural">Dinosaural</option>
-									<option value="Dirty Boy">Dirty Boy</option>
-									<option value="Divided by 13">Divided by 13</option>
-									<option value="DLS">DLS</option>
-									<option value="DOD">DOD</option>
-									<option value="Donner">Donner</option>
-									<option value="Dr. Green">Dr. Green</option>
-									<option value="Dr. No">Dr. No</option>
-									<option value="Dr. Scientist">Dr. Scientist</option>
-									<option value="Drybell">Drybell</option>
-									<option value="Duesenberg">Duesenberg</option>
-									<option value="Dunlop">Dunlop</option>
-									<option value="Durham Electronics">Durham Electronics</option>
-									<option value="Dwarfcraft Devices">Dwarfcraft Devices</option>
-									<option value="Dynastar">Dynastar</option>
-									<option value="E.W.S.">E.W.S.</option>
-									<option value="EAR-FUZZ">EAR-FUZZ</option>
-									<option value="Earthbound Audio">Earthbound Audio</option>
-									<option value="EarthQuaker Devices">EarthQuaker Devices</option>
-									<option value="EBS">EBS</option>
-									<option value="Ebtech">Ebtech</option>
-									<option value="Echoplex">Echoplex</option>
-									<option value="Effectrode">Effectrode</option>
-									<option value="Electro-Faustus">Electro-Faustus</option>
-									<option value="Electro-Harmonix">Electro-Harmonix</option>
-									<option value="Emerson Custom">Emerson Custom</option>
-									<option value="Emma">Emma</option>
-									<option value="Empress">Empress</option>
-									<option value="EMS">EMS</option>
-									<option value="EMT">EMT</option>
-									<option value="Endangered Audio Research">Endangered Audio Research</option>
-									<option value="Eno">Eno</option>
-									<option value="Enormous Door">Enormous Door</option>
-									<option value="Ernie Ball">Ernie Ball</option>
-									<option value="Eventide">Eventide</option>
-									<option value="EWS">EWS</option>
-									<option value="F.E.T.">F.E.T.</option>
-									<option value="Fairfield Circuitry">Fairfield Circuitry</option>
-									<option value="Fastback">Fastback</option>
-									<option value="Fender">Fender</option>
-									<option value="Fire">Fire</option>
-									<option value="Fire Custom">Fire Custom</option>
-									<option value="Fishman">Fishman</option>
-									<option value="Flannel Custom">Flannel Custom</option>
-									<option value="Flynn Amps">Flynn Amps</option>
-									<option value="FMR Audio">FMR Audio</option>
-									<option value="Focusrite">Focusrite</option>
-									<option value="Foxpedal">Foxpedal</option>
-									<option value="Foxrox">Foxrox</option>
-									<option value="Foxx Tone">Foxx Tone</option>
-									<option value="Framptone">Framptone</option>
-									<option value="Frantone">Frantone</option>
-									<option value="Free the Tone">Free the Tone</option>
-									<option value="Fridgebuzzz">Fridgebuzzz</option>
-									<option value="Friedman">Friedman</option>
-									<option value="Frontline">Frontline</option>
-									<option value="Fryer">Fryer</option>
-									<option value="Fuchs">Fuchs</option>
-									<option value="Fuhrmann">Fuhrmann</option>
-									<option value="Fulltone">Fulltone</option>
-									<option value="Fuzzrocious">Fuzzrocious</option>
-									<option value="G-Lab">G-Lab</option>
-									<option value="GNI">GNI</option>
-									<option value="Gnomeratron">Gnomeratron</option>
-									<option value="Gollmer">Gollmer</option>
-									<option value="Goodrich">Goodrich</option>
-									<option value="Goran">Goran</option>
-									<option value="Greed Tone">Greed Tone</option>
-									<option value="Green Carrot Pedals">Green Carrot Pedals</option>
-									<option value="Green Machine">Green Machine</option>
-									<option value="Greenhouse">Greenhouse</option>
-									<option value="Greer Amps">Greer Amps</option>
-									<option value="Greg Fryer">Greg Fryer</option>
-									<option value="Guitar Systems">Guitar Systems</option>
-									<option value="Guitar Tone Company">Guitar Tone Company</option>
-									<option value="Gurus">Gurus</option>
-									<option value="Guyatone">Guyatone</option>
-									<option value="Hallmark">Hallmark</option>
-									<option value="Harben Audio">Harben Audio</option>
-									<option value="Hartman">Hartman</option>
-									<option value="HAZ Labs">HAZ Labs</option>
-									<option value="Heavy Electronics">Heavy Electronics</option>
-									<option value="Heptode Virtuoso">Heptode Virtuoso</option>
-									<option value="Hermida Audio">Hermida Audio</option>
-									<option value="Hexe">Hexe</option>
-									<option value="Hilton Electronics">Hilton Electronics</option>
-									<option value="Himmelstrutz">Himmelstrutz</option>
-									<option value="Hiwatt">Hiwatt</option>
-									<option value="Holy Fire">Holy Fire</option>
-									<option value="Homebrew Electronics">Homebrew Electronics</option>
-									<option value="Honda Sound Works">Honda Sound Works</option>
-									<option value="Horizon Devices">Horizon Devices</option>
-									<option value="Hotone">Hotone</option>
-									<option value="Hudson Electronics">Hudson Electronics</option>
-									<option value="Hughes & Kettner">Hughes & Kettner</option>
-									<option value="Human Gear">Human Gear</option>
-									<option value="Hungry Robot Pedals">Hungry Robot Pedals</option>
-									<option value="Ibanez">Ibanez</option>
-									<option value="Idiotbox">Idiotbox</option>
-									<option value="Interfax">Interfax</option>
-									<option value="ISP Technologies">ISP Technologies</option>
-									<option value="J. Rockett Audio Designs">J. Rockett Audio Designs</option>
-									<option value="Jack Deville">Jack Deville</option>
-									<option value="Jacques">Jacques</option>
-									<option value="Jam Pedals">Jam Pedals</option>
-									<option value="Janglebox">Janglebox</option>
-									<option value="Jen">Jen</option>
-									<option value="Jetter">Jetter</option>
-									<option value="JHS">JHS</option>
-									<option value="Jim Dunlop">Jim Dunlop</option>
-									<option value="Joe Gore">Joe Gore</option>
-									<option value="Joemeek">Joemeek</option>
-									<option value="Joyo">Joyo</option>
-									<option value="Joyo Voodoo">Joyo Voodoo</option>
-									<option value="Keeler">Keeler</option>
-									<option value="Keeley">Keeley</option>
-									<option value="KHDK">KHDK</option>
-									<option value="Kikusui">Kikusui</option>
-									<option value="Kingsley">Kingsley</option>
-									<option value="Klemt">Klemt</option>
-									<option value="Klon">Klon</option>
-									<option value="Korg">Korg</option>
-									<option value="KR">KR</option>
-									<option value="Landscape Organic">Landscape Organic</option>
-									<option value="Lastgasp Art Laboratories">Lastgasp Art Laboratories</option>
-									<option value="Lazy J">Lazy J</option>
-									<option value="Lead Foot">Lead Foot</option>
-									<option value="Lehle">Lehle</option>
-									<option value="Lex Bos">Lex Bos</option>
-									<option value="Lexicon">Lexicon</option>
-									<option value="Line 6">Line 6</option>
-									<option value="LocoBox">LocoBox</option>
-									<option value="Loud Button">Loud Button</option>
-									<option value="Lovepedal">Lovepedal</option>
-									<option value="Lovetone">Lovetone</option>
-									<option value="Luck Ducks">Luck Ducks</option>
-									<option value="Machsonic">Machsonic</option>
-									<option value="Mad Professor">Mad Professor</option>
-									<option value="Maestro">Maestro</option>
-									<option value="Majik Box">Majik Box</option>
-									<option value="Malekko Heavy Industry">Malekko Heavy Industry</option>
-									<option value="Manlay">Manlay</option>
-									<option value="Mantic Effects">Mantic Effects</option>
-									<option value="Marion Henry">Marion Henry</option>
-									<option value="Marshall">Marshall</option>
-									<option value="MASFs">MASFs</option>
-									<option value="Mastro">Mastro</option>
-									<option value="Matchless">Matchless</option>
-									<option value="Matthew's Effects">Matthew's Effects</option>
-									<option value="Maxon">Maxon</option>
-									<option value="Maza FX">Maza FX</option>
-									<option value="MBS">MBS</option>
-									<option value="Menatone">Menatone</option>
-									<option value="Mesa Boogie">Mesa Boogie</option>
-									<option value="MG Music">MG Music</option>
-									<option value="MI Audio">MI Audio</option>
-									<option value="Mica">Mica</option>
-									<option value="Mid-Fi Electronics">Mid-Fi Electronics</option>
-									<option value="Mission Engineering">Mission Engineering</option>
-									<option value="MJM">MJM</option>
-									<option value="MM-O3">MM-O3</option>
-									<option value="MMM">MMM</option>
-									<option value="Modtone">Modtone</option>
-									<option value="Mojo Hand Fx">Mojo Hand Fx</option>
-									<option value="Monster Effects">Monster Effects</option>
-									<option value="Montgomery Applicances">Montgomery Applicances</option>
-									<option value="Montreal Assembly">Montreal Assembly</option>
-									<option value="Mooer">Mooer</option>
-									<option value="Moog">Moog</option>
-									<option value="MoogerFooger">MoogerFooger</option>
-									<option value="Moollon">Moollon</option>
-									<option value="Morley">Morley</option>
-									<option value="Morpheus">Morpheus</option>
-									<option value="Mosrite">Mosrite</option>
-									<option value="Mr. Black">Mr. Black</option>
-									<option value="Mu-FX">Mu-FX</option>
-									<option value="Mu-Tron">Mu-Tron</option>
-									<option value="Musician Sound Design">Musician Sound Design</option>
-									<option value="Musonic">Musonic</option>
-									<option value="MWFX">MWFX</option>
-									<option value="MXR">MXR</option>
-									<option value="Myrtles">Myrtles</option>
-									<option value="Nady">Nady</option>
-									<option value="Neo Instruments">Neo Instruments</option>
-									<option value="Neunaber">Neunaber</option>
-									<option value="NIG">NIG</option>
-									<option value="Nobels">Nobels</option>
-									<option value="Nocturne">Nocturne</option>
-									<option value="Nux">Nux</option>
-									<option value="Oddfellow">Oddfellow</option>
-									<option value="Okko">Okko</option>
-									<option value="Old Blood Noise Endeavors">Old Blood Noise Endeavors</option>
-									<option value="Old World">Old World</option>
-									<option value="One Control">One Control</option>
-									<option value="Onkart">Onkart</option>
-									<option value="OohLaLa">OohLaLa</option>
-									<option value="Option 5 Destination">Option 5 Destination</option>
-									<option value="Orange Amplifiers">Orange Amplifiers</option>
-									<option value="Origin Effects">Origin Effects</option>
-									<option value="Oxfuzz">Oxfuzz</option>
-									<option value="Panda Audio">Panda Audio</option>
-									<option value="Paul Cochrane">Paul Cochrane</option>
-									<option value="PCE">PCE</option>
-									<option value="Peavey">Peavey</option>
-									<option value="Pedal Hole">Pedal Hole</option>
-									<option value="Pete Cornish">Pete Cornish</option>
-									<option value="Peterson">Peterson</option>
-									<option value="Philly Fuzz">Philly Fuzz</option>
-									<option value="Piggy FX">Piggy FX</option>
-									<option value="Pigtronix">Pigtronix</option>
-									<option value="Port City">Port City</option>
-									<option value="Prescription Electronics">Prescription Electronics</option>
-									<option value="Pro Co">Pro Co</option>
-									<option value="Protone">Protone</option>
-									<option value="Protons">Protons</option>
-									<option value="Providence">Providence</option>
-									<option value="R3D Electronics">R3D Electronics</option>
-									<option value="Radial Engineering">Radial Engineering</option>
-									<option value="Rainger FX">Rainger FX</option>
-									<option value="Rawkworks">Rawkworks</option>
-									<option value="Real McCoy Custom">Real McCoy Custom</option>
-									<option value="Real Tube">Real Tube</option>
-									<option value="Realistic Electronic">Realistic Electronic</option>
-									<option value="Reaper">Reaper</option>
-									<option value="Reaper Pedals">Reaper Pedals</option>
-									<option value="Red Panda">Red Panda</option>
-									<option value="Red Witch">Red Witch</option>
-									<option value="Retro-Sonic">Retro-Sonic</option>
-									<option value="RimRock">RimRock</option>
-									<option value="RMC">RMC</option>
-									<option value="Road Rage">Road Rage</option>
-									<option value="Rockbox">Rockbox</option>
-									<option value="Rockett">Rockett</option>
-									<option value="Rockman">Rockman</option>
-									<option value="Rocktron">Rocktron</option>
-									<option value="Rodenberg">Rodenberg</option>
-									<option value="Roger Linn Design">Roger Linn Design</option>
-									<option value="Roger Mayer">Roger Mayer</option>
-									<option value="Rogue">Rogue</option>
-									<option value="Roland">Roland</option>
-									<option value="Rolls">Rolls</option>
-									<option value="Root Effects">Root Effects</option>
-									<option value="Rosac Electronics">Rosac Electronics</option>
-									<option value="Ross">Ross</option>
-									<option value="Rothwell">Rothwell</option>
-									<option value="Rotosound">Rotosound</option>
-									<option value="Sabbadius">Sabbadius</option>
-									<option value="Salvation Mods">Salvation Mods</option>
-									<option value="Samson">Samson</option>
-									<option value="Sarno Music Solutions">Sarno Music Solutions</option>
-									<option value="Satellite">Satellite</option>
-									<option value="Saturnworks">Saturnworks</option>
-									<option value="Schroeder">Schroeder</option>
-									<option value="Schulte">Schulte</option>
-									<option value="Selah Effects">Selah Effects</option>
-									<option value="Sentenza">Sentenza</option>
-									<option value="Seymour Duncan">Seymour Duncan</option>
-									<option value="Shadow">Shadow</option>
-									<option value="Shaftsbury">Shaftsbury</option>
-									<option value="Shigemori">Shigemori</option>
-									<option value="Shin-Ei">Shin-Ei</option>
-									<option value="Shin's Music">Shin's Music</option>
-									<option value="Sho-Bud">Sho-Bud</option>
-									<option value="Shoe Pedals">Shoe Pedals</option>
-									<option value="SIB">SIB</option>
-									<option value="Sitori Sonics">Sitori Sonics</option>
-									<option value="Skreddy">Skreddy</option>
-									<option value="SM">SM</option>
-									<option value="Smallsound/Bigsound">Smallsound/Bigsound</option>
-									<option value="Smart People Factory">Smart People Factory</option>
-									<option value="Snark">Snark</option>
-									<option value="Snarling Dogs">Snarling Dogs</option>
-									<option value="Sobbat">Sobbat</option>
-									<option value="Sola Sound">Sola Sound</option>
-									<option value="SolidGold FX">SolidGold FX</option>
-									<option value="SoloDallas">SoloDallas</option>
-									<option value="Songworks">Songworks</option>
-									<option value="Sonic Research">Sonic Research</option>
-									<option value="Sonomatic">Sonomatic</option>
-									<option value="Sonuus">Sonuus</option>
-									<option value="Sony">Sony</option>
-									<option value="Soundblox">Soundblox</option>
-									<option value="Source Audio">Source Audio</option>
-									<option value="Spaceman">Spaceman</option>
-									<option value="Spontaneous Audio Devices">Spontaneous Audio Devices</option>
-									<option value="Stomp Under Foot">Stomp Under Foot</option>
-									<option value="Strymon">Strymon</option>
-									<option value="SubDecay">SubDecay</option>
-									<option value="Suhr">Suhr</option>
-									<option value="Sunrise">Sunrise</option>
-									<option value="Supreme">Supreme</option>
-									<option value="Supro">Supro</option>
-									<option value="Swart">Swart</option>
-									<option value="Sweet Sound">Sweet Sound</option>
-									<option value="Swell">Swell</option>
-									<option value="T-Rex Engineering">T-Rex Engineering</option>
-									<option value="Tanabe.TV">Tanabe.TV</option>
-									<option value="Tapco">Tapco</option>
-									<option value="Taylor McGrath">Taylor McGrath</option>
-									<option value="TC Electronic">TC Electronic</option>
-									<option value="TC Helicon">TC Helicon</option>
-									<option value="Tech 21">Tech 21</option>
-									<option value="Telenordia">Telenordia</option>
-									<option value="Teletronix">Teletronix</option>
-									<option value="Ten-Ten">Ten-Ten</option>
-									<option value="this1smyne">this1smyne</option>
-									<option value="ThorpyFX">ThorpyFX</option>
-									<option value="Tim Jauernig">Tim Jauernig</option>
-									<option value="TMR">TMR</option>
-									<option value="Toad Works">Toad Works</option>
-									<option value="Tokai">Tokai</option>
-									<option value="Tomkat">Tomkat</option>
-									<option value="Tone City">Tone City</option>
-									<option value="Tone Concepts">Tone Concepts</option>
-									<option value="Tone Freak">Tone Freak</option>
-									<option value="Tonebender">Tonebender</option>
-									<option value="Tonebone">Tonebone</option>
-									<option value="Toneconcepts">Toneconcepts</option>
-									<option value="Toneczar">Toneczar</option>
-									<option value="Tony City">Tony City</option>
-									<option value="Top Tone">Top Tone</option>
-									<option value="Tortuga Effects">Tortuga Effects</option>
-									<option value="Totally Wycked Audio">Totally Wycked Audio</option>
-									<option value="Trombetta">Trombetta</option>
-									<option value="Truetone">Truetone</option>
-									<option value="TSVG">TSVG</option>
-									<option value="TWA">TWA</option>
-									<option value="Two Notes">Two Notes</option>
-									<option value="Tycobrahe">Tycobrahe</option>
-									<option value="Tym">Tym</option>
-									<option value="Univox">Univox</option>
-									<option value="Valbruch">Valbruch</option>
-									<option value="Van Weelden">Van Weelden</option>
-									<option value="VanAmps">VanAmps</option>
-									<option value="Velvet">Velvet</option>
-									<option value="Vemuram">Vemuram</option>
-									<option value="Vermona">Vermona</option>
-									<option value="Vertex">Vertex</option>
-									<option value="Visual Sound">Visual Sound</option>
-									<option value="VL Effects">VL Effects</option>
-									<option value="Voodoo Lab">Voodoo Lab</option>
-									<option value="Vox">Vox</option>
-									<option value="Wally">Wally</option>
-									<option value="Walrus Audio">Walrus Audio</option>
-									<option value="Wampler">Wampler</option>
-									<option value="Warehouse">Warehouse</option>
-									<option value="Warp Sound">Warp Sound</option>
-									<option value="Warren and Cuff">Warren and Cuff</option>
-									<option value="Washburn">Washburn</option>
-									<option value="Watkins">Watkins</option>
-									<option value="Wattson">Wattson</option>
-									<option value="Way Huge Electronics">Way Huge Electronics</option>
-									<option value="Weber">Weber</option>
-									<option value="Wells Amp">Wells Amp</option>
-									<option value="Welsh">Welsh</option>
-									<option value="WEM">WEM</option>
-									<option value="Westbury">Westbury</option>
-									<option value="WGS">WGS</option>
-									<option value="Whirlwind">Whirlwind</option>
-									<option value="Wilson Effects">Wilson Effects</option>
-									<option value="WMD">WMD</option>
-									<option value="Wren and Cuff">Wren and Cuff</option>
-									<option value="Xotic Effects">Xotic Effects</option>
-									<option value="XTS">XTS</option>
-									<option value="Yamaha">Yamaha</option>
-									<option value="Zenkudo">Zenkudo</option>
-									<option value="Zeta Systems">Zeta Systems</option>
-									<option value="Zinky">Zinky</option>
-									<option value="Zoom">Zoom</option>
-									<option value="ZVex">ZVex</option>
-							</td>
-							<td>
-								<select id="flt1" type="text" ct="1" class="fit">
-							</td>
-							<td>
-								<select id="flt2" type="text" ct="2" class="fit">
-							</td>
-							<td>
-								<select id="flt3" type="text" ct="3" class="fit">
-							</td>
-							<td>
-								<select id="flt14" type="text" ct="4" class="fit">
-							</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class=" odd" style="display: none;">
-							<td>Boss</td>
-							<td>AB-2</td>
-							<td>AB Box</td>
-							<td>Guitar</td>
-							<td>http://equipboard.com/items/boss-ab-2</td>
-						</tr>
-						<tr class=" even" style="display: none;">
-							<td>Boss</td>
-							<td>AC-2</td>
-							<td>Acoustic Simulator</td>
-							<td>Guitar</td>
-							<td>http://equipboard.com/items/boss-ac-2</td>
-						</tr>
-						<tr class=" even" style="display: none;">
-							<td>Boss</td>
-							<td>AC-3 Acoustic Simulator</td>
-							<td>Acoustic Simulator</td>
-							<td>Guitar</td>
-							<td>http://equipboard.com/items/boss-ac-3-acoustic...</td>
-						</tr>
-						<tr class=" odd" style="display: none;">
-							<td>Boss</td>
-							<td>AP-2 Phase II</td>
-							<td>Phaser</td>
-							<td>Guitar</td>
-							<td>http://equipboard.com/items/boss-ap-2-phase-ii</td>
-						</tr>
-						<tr class=" even" style="display: none;">
-							<td>Boss</td>
-							<td>AW-2 Auto Wah Guitar</td>
-							<td>Wah</td>
-							<td>Guitar</td>
-							<td>http://equipboard.com/items/boss-aw-2-auto-wah...</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div style="clear:both"></div>
+				<div class="container table-data" id="table-data">
+				<!--	<table id="data-types">
+						<thead>
+							<tr>
+								<th>Brand</th>
+								<th>Pedal</th>
+								<th>Category</th>
+								<th>Instrument</th>
+								<th>Equipboard URL</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class=" odd">
+								<td>Boss</td>
+								<td>AB-2</td>
+								<td>AB Box</td>
+								<td>Guitar</td>
+								<td>http://equipboard.com/items/boss-ab-2</td>
+							</tr>
+							<tr class=" even">
+								<td>Boss</td>
+								<td>AC-2</td>
+								<td>Acoustic Simulator</td>
+								<td>Guitar</td>
+								<td>http://equipboard.com/items/boss-ac-2</td>
+							</tr>
+							<tr class=" even">
+								<td>Boss</td>
+								<td>AC-3 Acoustic Simulator</td>
+								<td>Acoustic Simulator</td>
+								<td>Guitar</td>
+								<td>http://equipboard.com/items/boss-ac-3-acoustic...</td>
+							</tr>
+							<tr class=" odd">
+								<td>Boss</td>
+								<td>AP-2 Phase II</td>
+								<td>Phaser</td>
+								<td>Guitar</td>
+								<td>http://equipboard.com/items/boss-ap-2-phase-ii</td>
+							</tr>
+							<tr class=" even">
+								<td>Boss</td>
+								<td>AW-2 Auto Wah Guitar</td>
+								<td>Wah</td>
+								<td>Guitar</td>
+								<td>http://equipboard.com/items/boss-aw-2-auto-wah...</td>
+							</tr>
+						</tbody>
+					<!-- </table> -->
+					{% for table in tables %}
+						{{ table|safe }}
+					{% endfor %}
+					<script src="http://koalyptus.github.io/TableFilter/tablefilter/tablefilter.js"></script>
+					<script data-config>
+						var tfConfig = {
+								base_path: 'http://koalyptus.github.io/TableFilter/tablefilter/',
+								alternate_rows: true,
+								rows_counter: true,
+								rows_counter_text: 'Pedals: ',
+								btn_reset: true,
+								btn_reset_text: "Clear",
+								loader: true,
+								no_results_message: true,
+
+								// columns data types
+								col_types: [
+										'string',
+										'string',
+										'string',
+										// { type: 'formatted-number', decimal: ',', thousands: '.' },
+										// 'formatted-number', // defaults to '.' for decimal and ',' for thousands
+										'string',
+										'string'
+										// { type: 'date', locale: 'fr' },
+										// { type: 'date', locale: 'en-US' },
+										// { type: 'date', locale: 'en-US', format: ['{dd}-{months}-{yyyy|yy}'] },
+										// 'ipaddress'
+								],
+
+								extensions: [{ name: 'sort' }]
+						};
+						var tf = new TableFilter('data-types', tfConfig);
+						tf.init();
+					</script>
+				</div>
+
+
 			</div>
 			</div><!-- /row -->
 		</div><!-- /container -->
@@ -1231,6 +747,12 @@
 		</div><!-- /container -->
 	</div><!-- /Slide 6 -->
 
+
+<!-- Table scripts -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="http://koalyptus.github.io/TableFilter/assets/js/bootstrap.min.js"></script>
 </body>
 
 	<!-- SCRIPTS -->
@@ -1244,8 +766,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
 	<!-- fancybox init & added scripts -->
 	<script src="../static/js/app.js"></script>
-	<script src="../static/js/tablefilter_min.js" language="javascript" type="text/javascript"></script>
-
-
+	<!-- table script -->
+	<script type="text/javascript" charset="utf-8" async="" src="../static/js/tf-0-2cb22dac7c11cbd22792.js"></script>
 
 </html>

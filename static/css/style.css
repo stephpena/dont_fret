@@ -309,6 +309,14 @@ body {
 	padding-top: 90px;
 }
 
+	.table-data {
+		color: #141514;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		display: none;
+	}
+
 	.title-row {
 		font-size: 45px;
 		padding-bottom: 50px;
