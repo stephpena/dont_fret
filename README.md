@@ -10,7 +10,7 @@ Please read on for a more detailed look at the motivation and process behind thi
 
 ## Thank You
 
-A quick thank you to Galvanize instructors and my fellow classmates for all of their help on this project. It was completed in two works as my capstone and I could not have done it without them. Also thanks to anyone who is reading this and checking out my project.
+A quick thank you to Galvanize instructors and my fellow classmates for all of their help on this project. It was completed in two weeks as my capstone and I could not have done it without them. Also thanks to anyone who is reading this and checking out my project.
 
 ## The Problem
 
