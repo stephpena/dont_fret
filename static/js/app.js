@@ -43,6 +43,7 @@ $( function() {
      "Metallica",
      "Led Zeppelin",
      "The 1975",
+     "Nirvana",
      "Wes Montgomery",
      "AC/DC",
      "The Ramones",
@@ -130,8 +131,8 @@ $( function() {
       });
 } );
 
-jQuery(function($) {
-    var mapping = {
+jQuery(function() {
+    var locations = {
         'Boss': ['DS-1', 'TU-3', 'PS-2'],
         'TC Electronic': ['Ditto Looper'],
         'Electro-Harmonix': ['Small Clone','Small Stone','Hall of Fame'],
@@ -142,14 +143,13 @@ jQuery(function($) {
         'Russia': ['St. Petersburg'],
     }
 
-    var $mapping = $('#pedalname');
-    $('#brand').change(function () {
-        var brand = $(this).val(), lcns = locations[brand] || [];
+    $('[id^="brand"]').change(function () {
+        var country = $(this).val(), lcns = locations[country] || [];
 
         var html = $.map(lcns, function(lcn){
             return '<option value="' + lcn + '">' + lcn + '</option>'
         }).join('');
-        $mapping.html(html)
+        $('[id^="pedalname"]').html(html)
     });
 });
 
@@ -160,9 +160,10 @@ function showTable() {
     document.getElementById("table-data").style.display="block";
 }
 
+
 // add more pedal data
 $("#addMore").click(function(){
-    $(".linedrop:first").clone().append('<button id="remove">-</button>').appendTo(".ui-widget");
+    $(".linedrop:first").clone(true).append('<button id="remove">-</button>').appendTo(".ui-widget");
     $(".linedrop:last").empty();
 });
 
