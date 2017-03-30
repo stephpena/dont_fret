@@ -149,7 +149,7 @@ jQuery(function() {
         var html = $.map(lcns, function(lcn){
             return '<option value="' + lcn + '">' + lcn + '</option>'
         }).join('');
-        $('[id^="pedalname"]').html(html)
+        $('.pedalname').closest('select').html(html)
     });
 });
 
