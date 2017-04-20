@@ -14,9 +14,10 @@ def mapping_data():
     item_mappings = add_ids(pedals + genres + similars)
     return item_mappings
 
-def get_item_id(answer,item_mappings):
-    for item_id,item_name in item_mapping:
-        if answer == y:
+def get_item_id(answer):
+    item_mappings = mapping_data()
+    for item_id,item_name in item_mappings:
+        if answer == item_name:
             return item_id
 
 def get_user_input_ids(answers):

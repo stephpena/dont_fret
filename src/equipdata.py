@@ -25,6 +25,7 @@ def cleaned_pedal_data():
 
 def get_item_lists():
     artist_data = import_files('data/artist_data.json','json')
+    clean_pedal_data = cleaned_pedal_data()
     fix = [u'Blues',
      u'Brass & Military',
      u"Children's",
