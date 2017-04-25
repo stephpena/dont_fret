@@ -24,4 +24,5 @@ def get_user_input_ids(answers):
     answer_ids = []
     for answer in answers:
         answer_ids.append(get_item_id(answer))
+    answer_ids = [x for x in answer_ids if x is not None]
     return answer_ids
