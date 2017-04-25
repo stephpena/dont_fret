@@ -5,23 +5,10 @@ import json
 import sys
 import cPickle as pickle
 import requests
+import src.model as m
 app = Flask(__name__)
 
-def load_model(filename):
-    """
-    Loads and returns trained sklearn random forest model.
-    Parameters
-    ----------
-    filename: str
-        The filename/path of the pickled model
-    Returns
-    -------
-    model:
-        Trained sklearn random forest model
-    """
-    with open(filename) as f:
-        model = pickle.load(f)
-    return model
+
 
 @app.route('/', methods=['GET'])
 def index():
@@ -38,6 +25,7 @@ def pedal():
 @app.route('/answers', methods=['POST'])
 def test():
     return render_template('test.html')
+
 
 
 def get_data():
@@ -72,6 +60,14 @@ def get_data():
     df = df.drop('cleaned_name',axis=1)
     df.columns = ['Brand','Pedal','Category','Instrument','Equipboard URL']
     return df
+
+def get_recommendations(answers):
+    top_sim_users = m.get_similar_users(answers,num_users=25)
+    recs_df = m.get_ranked_recommendations(top_sim_users,m.model)
+    cleaned_pedal_data = m.ed.cleaned_pedal_data()
+    user_answer_ids = m.qa.get_user_input_ids(answers)
+    recs = m.get_recommendations_df(cleaned_pedal_data,recs_df,user_answer_ids)
+    return recs
 
 
 # model = load_model('src/model.pkl')
