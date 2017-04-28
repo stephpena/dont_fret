@@ -10,6 +10,9 @@ import equipdata as ed
 spark = pyspark.sql.SparkSession.builder.getOrCreate()
 sc = spark.sparkContext
 model = MatrixFactorizationModel.load(sc, "data/firstmodel")
+# model = MatrixFactorizationModel.load(sc, "data/secondmodel")
+# model = MatrixFactorizationModel.load(sc, "data/thirdmodel")
+
 
 def generate_new_user_matrix(user_answers,user_total):
     user_answer_ids = qa.get_user_input_ids(user_answers)
@@ -54,23 +57,23 @@ def get_similar_users(user_answers,num_users=5):
     top_similar_users = get_top_user_ids(top_similar_users,mapping_ids)
     return top_similar_users
 
-def get_rec_list(top_similar_users,model):
+def get_rec_list(top_similar_users,model,num_recs=5):
     rec_list = []
     user_item_df = ed.get_similarity_data()
     for num in top_similar_users:
         try:
             if num in user_item_df.user.unique():
-                recs = model.recommendProducts(num,5)
+                recs = model.recommendProducts(num,num_recs)
             for rec in recs:
                 rec_list.append(rec)
         except:
             continue
     return rec_list
 
-def get_ranked_recommendations(top_similar_users,model):
+def get_ranked_recommendations(top_similar_users,model,num_recs=5):
     recommendations = []
     rating = []
-    rec_list = get_rec_list(top_similar_users,model)
+    rec_list = get_rec_list(top_similar_users,model,num_recs)
     for x,y,z in rec_list:
         if y not in recommendations:
             recommendations.append(y)

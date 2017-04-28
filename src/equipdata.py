@@ -67,7 +67,7 @@ with open('data/artist_owned.csv') as f:
     artist_owned_df = pd.read_csv(f)
 
 def get_similarity_data():
-    with open('data/clean_user_total_df.csv') as f:
+    with open('data/user_item_df.csv') as f:
         user_total_df =  pd.read_csv(f)
     user_total_df = user_total_df.astype(int)
     return user_total_df
