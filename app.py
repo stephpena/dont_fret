@@ -21,11 +21,19 @@ def pedal():
     df = df.replace('class="dataframe">','id="data-types" class="dataframe>"')
     return render_template('pedal.html',tables=[df])
 
+#
+# @app.route('/answers', methods=['POST'])
+# def test():
+#     return render_template('test.html')
 
-@app.route('/answers', methods=['POST'])
-def test():
-    return render_template('test.html')
-
+@app.route('/answers', methods=['POST','GET'])
+def answers():
+    # user_data = request.json
+    # a, b, c = user_data['a'], user_data['b'], user_data['c']
+    # root_1, root_2 = _solve_quadratic(a, b, c)
+    test_1 = 25
+    test_2 = 15
+    return jsonify({'test_1': test_1, 'test_2': test_2})
 
 
 def get_data():
@@ -69,8 +77,6 @@ def get_recommendations(answers):
     recs = m.get_recommendations_df(cleaned_pedal_data,recs_df,user_answer_ids)
     return recs
 
-
-# model = load_model('src/model.pkl')
 
 
 if __name__ == '__main__':

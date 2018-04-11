@@ -35,6 +35,8 @@ I created a web app that would allow guitarists to enter their genres, artist in
 
 ## Future work
 
+<img src="static/images/justyouwait.gif">
+
 First, I want to have the app up and running on my website. Then ideally, I would want to include other equipment and musicians in this project. So that a guitarist can also narrow down the search for their guitars or amplifiers. Hopefully at one point bassists, drummers, and keyboardists can also use Don't Fret.
 
 I also want to add more features to the results of the web app including: average price, link to purchase, link to a youtube review, perhaps even an audio clip if available, and specifically which professionals have used the equipment. Essentially, I would want this to be the first stop when an artist decides to make a new equipment purchase.
