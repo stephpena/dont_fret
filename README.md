@@ -31,6 +31,8 @@ The specific model used was Spark's ALS.trainImplicit. This model's returned "ra
 
 ## The Final Output
 
+<img src="static/images/webappexample.gif">
+
 I created a web app that would allow guitarists to enter their genres, artist influences, and existing pedals then view a table of all of the recommended guitar pedals. However, musicians are tricky creatures so ideally these recommendations can be used as a starting point. I would hope that minimally this recommender will remove a great deal of the pedals that would definitely not work for a guitarist's style.
 
 ## Future work
