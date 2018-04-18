@@ -102,3 +102,6 @@ data/artist_data.json
 data/clean_user_total_df.csv
 data/cleaned_pedal_data.csv
 data/artist_full_ratings.csv
+
+# old data
+old_data/
