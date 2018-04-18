@@ -91,3 +91,14 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# model metadata
+data/firstmodel/metadata/
+data/secondmodel/metadata/
+
+# raw data
+data/main_page_source.html
+data/artist_data.json
+data/clean_user_total_df.csv
+data/cleaned_pedal_data.csv
+data/artist_full_ratings.csv
