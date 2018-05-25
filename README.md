@@ -57,13 +57,14 @@ Now go listen to or play some music!
 <table border="0">
 <tr>
 <td><img src="static/images/python.png" width="120"></td>
-<td><img src="static/images/sklearn.png" width="120"><img src="static/images/spark.png" width="120"></td>
+<td><img src="static/images/sklearn.png" width="120"></td>
+<td><img src="static/images/spark.png" width="120"></td>
+<td><img src="static/images/jQuery.gif" width="120"></td>
 </tr>
 <tr>
-<td><img src="static/images/jQuery.gif" width="120"><img src="static/images/bootstrap.gif" width="120"></td>
-<td><img src="static/images/flask.png" width="120"><img src="static/images/selenium.png" width="120"></td>
-</tr>
-<tr>
+<td><img src="static/images/bootstrap.gif" width="120"></td>
+<td><img src="static/images/flask.png" width="120"></td>
+<td><img src="static/images/selenium.png" width="120"></td>
 <td><img src="static/images/aws.png" width="120"></td>
 </tr>
 </table>
