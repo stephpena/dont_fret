@@ -54,14 +54,23 @@ If you have read this entire page, thank you! I hope you enjoyed reading and/or 
 Now go listen to or play some music!
 <img src="static/images/prince.gif">
 
-
-<img src="static/images/python.png" width="120">
-<img src="static/images/sklearn.png" width="120"><img src="static/images/spark.png" width="120">
-<img src="static/images/jQuery.gif" width="120"><img src="static/images/bootstrap.gif" width="120">
-<img src="static/images/flask.png" width="120"><img src="static/images/selenium.png" width="120">
-<img src="static/images/aws.png" width="120">
+<table border="0">
+<tr>
+<td><img src="static/images/python.png" width="120"></td>
+<td><img src="static/images/sklearn.png" width="120"><img src="static/images/spark.png" width="120"></td>
+</tr>
+<tr>
+<td><img src="static/images/jQuery.gif" width="120"><img src="static/images/bootstrap.gif" width="120"></td>
+<td><img src="static/images/flask.png" width="120"><img src="static/images/selenium.png" width="120"></td>
+</tr>
+<tr>
+<td><img src="static/images/aws.png" width="120"></td>
+</tr>
+</table>
 <!-- ![alt-text-1](static/images/python.png)
 ![alt-text-2](static/images/sklearn.png) ![alt-text-3](static/images/spark.png)
 ![alt-text-4](static/images/jQuery.gif) ![alt-text-5](static/images/bootstrap.gif)
 ![alt-text-6](static/images/flask.png) ![alt-text-7](static/images/selenium.png)
 ![alt-text-8](static/images/aws.png) -->
+
+
