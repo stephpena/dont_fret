@@ -54,7 +54,7 @@ If you have read this entire page, thank you! I hope you enjoyed reading and/or 
 Now go listen to or play some music!
 <img src="static/images/prince.gif">
 
-<table border="0">
+<table border="0"; align="center">
 <tr>
 <td><img src="static/images/python.png" width="120"></td>
 <td><img src="static/images/sklearn.png" width="120"></td>
